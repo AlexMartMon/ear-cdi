@@ -5,6 +5,8 @@ import static org.junit.Assert.assertEquals;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.inject.Inject;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -22,7 +24,9 @@ import com.tsystems.tu.negocio.objetos.Motocicleta;
 public class ColisionBOTest {
 
 	// Objeto de negocio a testear.
-	private ColisionBOImpl colisionBO;
+	//private ColisionBOImpl colisionBO;
+	@Inject
+	ColisionBOImpl colisionBO;
 
 	private List<AbstractVehiculo> vehiculos;
 
